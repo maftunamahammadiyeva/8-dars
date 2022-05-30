@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="text-primary fw-bold">Kim birinchi boradi?!</h1>
 
-</body>
+      <form class="form">
+        <label for="input" class="text-primary">Masofa</label>
+        <input
+          id="input"
+          class="input p-2 text-primary w-50"
+          type="number"
+          placeholder="Iltimos masofani kmda kirgizing!!!"
+        />
+        <button class="btn btn-primary">Hisobla</button>
+      </form>
+      <ul class="list d-flex justify-content-center">
+        <li class="list__item border text-center p-5">
+          <img src="./images/walk.png" alt="walk icon" width="50" height="50" />
+          <p>Piyoda</p>
+          <p class="result-walk">soat</p>
+        </li>
+
+        <li class="list__item border text-center p-5">
+          <img src="./images/bike.png" alt="bike icon" width="50" height="50" />
+          <p>Velosipedda</p>
+          <p class="result-bike">soat</p>
+        </li>
+
+        <li class="list__item border text-center p-5">
+          <img src="./images/car.png" alt="car icon" width="50" height="50" />
+          <p>Mashinada</p>
+          <p class="result-car">soat</p>
+        </li>
+
+        <li class="list__item border text-center p-5">
+          <img src="./images/airplan.png" alt="" width="50" height="50" />
+          <p>Samolyotda</p>
+          <p class="result-airplan">soat</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container text-center mt-5">
+      <h2>Temperatura konventeri</h2>
+      <form class="form-t">
+        <label for="input-t">Harorat celceyda</label>
+        <input
+          id="input-t"
+          class="form__input"
+          type="number"
+          placeholder="gradusni kirgizing"
+        />
+        <div class="d-flex justify-content-center mt-1">
+          <p class="me-5 pe-2">Harorta frongeyda</p>
+          <p class="result form__desc ms-5">000000000</p>
+        </div>
+        <button>Hisobla</button>
+      </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>
